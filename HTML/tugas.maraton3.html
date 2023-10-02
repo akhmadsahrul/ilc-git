@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ILC-18</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="maraton3.css" />
+    <!-- Menggunakan Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <header>
+        <h1>ILC-18</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#registrasi">Registrasi</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4" style="width: 100%">
+                    <label for=""><b>Profil</b></label>
+                    <img class="card-img-top mt-1" src="ilcIG.png" alt="Card image cap" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+                            quam placeat eaque nihil! Similique perspiciatis ex illo illum
+                            iusto nesciunt quia itaque consequuntur. Error voluptas quos
+                            perspiciatis ipsa, quis aperiam.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card tambahan -->
+                <div class="card" style="width: 100%">
+                    <label for=""><b>Event</b></label>
+                    <img class="card-img-top mt-1" src="event.jpg" alt="Card image cap" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Daftar berita tetap di sini -->
+                <div class="card mb-6" style="width: 18rem">
+                    <label for="" class="text-center"><b>logo ILC</b></label>
+                    <img class="card-img-top" src="Logo-ILC.png" alt="Card image cap" />
+                    <div class="card-body">
+                        <p class="card-text">
+                            <label for=""><b>informasi:</b></label>
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Register menggunakan Bootstrap -->
+    <section id="registrasi" class="card container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Formulir Registrasi</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" class="form-control" id="nama" name="nama" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="tgl_lahir">Tanggal Lahir:</label>
+                        <input type="date" class="form-control" id="tgl_lahir" name="tgl_lahir" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="jk">Jenis Kelamin:</label>
+                        <select class="form-control" id="jk" name="jk" required>
+                            <option value="laki">Laki-laki</option>
+                            <option value="perempuan">Perempuan</option>
+                        </select>
+                        <br />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Daftar</button>
+                </form>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <img src="Logo-ILC.png" alt="Logo" class="img-fluid" width="50%" />
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="mt-4 text-center" style="background-color: darkcyan; color: white">
+        <p>&copy; 2023 ILC-18</p>
+    </footer>
+
+    <!-- Menggunakan Bootstrap JavaScript -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Pop Up Header -->
+
+    <body>
+        <header id="sticky-header">
+            <h1>ILC-18</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#registrasi">Registrasi</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- ... Kode lainnya ... -->
+
+        <script>
+            window.addEventListener('scroll', () => {
+                const header = document.getElementById('sticky-header');
+                if (window.scrollY >
+                    100) { // Ubah 100 sesuai dengan posisi Anda ingin mengaktifkan header sticky
+                    header.classList.add('sticky');
+                } else {
+                    header.classList.remove('sticky');
+                }
+            });
+        </script>
+    </body>
+
+</html>
