@@ -1,0 +1,93 @@
+/* Reset beberapa gaya default browser */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya umum untuk body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya untuk header */
+header {
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    padding: 1em 15px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+/* Gaya untuk navigasi */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00f;
+}
+
+
+/* POP UP Header*/
+#sticky-header {
+    position: relative;
+    background-color: darkcyan; 
+    color: white; 
+    padding: 10px 0;
+    transition: all 0.3s ease; 
+}
+
+#sticky-header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000; 
+}
+/* Gaya umum untuk elemen yang akan disembunyikan */
+.logo-ilc-mobile,
+.logo-ilc-desktop {
+    display: none; 
+}
+
+/* Gaya untuk logo ILC pada tampilan Desktop */
+@media screen and (min-width: 768px) {
+    .logo-ilc-desktop {
+        display: block !important; 
+    }
+
+    .logo-ilc-mobile {
+        display: none !important; 
+    }
+}
+
+/* Gaya untuk logo ILC pada tampilan Mobile */
+@media screen and (max-width: 767px) {
+    .logo-ilc-mobile {
+        display: block !important;
+    }
+
+    .logo-ilc-desktop {
+        display: none !important; 
+    }
+}
+
